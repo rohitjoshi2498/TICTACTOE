@@ -11,7 +11,7 @@ print(1,'|',2,'|',3)
 print()
 
 
-def display1(turn):                                       #function to display the game after every move
+def display1():                                       #function to display the game after every move
     print(dict1[7],'|',dict1[8],'|',dict1[9])
     print('--+---+--')
     print(dict1[4],'|',dict1[5],'|',dict1[6])
@@ -32,7 +32,7 @@ def tik():                                               # This is the main game
             dict1[pos]= turn
             count+=1
             print('count is ',count)
-            display1(turn)
+            display1()
         else:
             print("The slot is filled try again")
             continue
